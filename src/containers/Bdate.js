@@ -9,14 +9,14 @@ const mapStateToProps = state => {
     daysInMonth: state.daysInMonth,
     user: state.user
   }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
     onUpdateBdate: (payload) => dispatch(actionUpdateBdate(payload)),
     onUpdateDaysInMonth: (payload) => dispatch(actionUpdateDaysInMonth(payload))
   }
-}
+};
 
 class UserForm extends Component {
 
@@ -31,7 +31,7 @@ class UserForm extends Component {
   getDays() {
     let optionDays = [];
     for (let i = 1; i <= this.props.daysInMonth; i++) {
-      let n10 = i < 10 ? i = `0${i}` : i
+      let n10 = i < 10 ? i = `0${i}` : i;
       optionDays.push({
         value: n10,
         label: n10
@@ -40,7 +40,7 @@ class UserForm extends Component {
     return optionDays;
   };
 
-  getMonths() {
+  static getMonths() {
     return [
       { value: '01', label: 'Января' },
       { value: '02', label: 'Февраля' },
@@ -57,7 +57,7 @@ class UserForm extends Component {
     ];
   };
 
-  getYears() {
+  static getYears() {
     let years = [];
     for (let i = new Date().getFullYear(); i >= 1930; i--) {
       years.push({
@@ -77,7 +77,7 @@ class UserForm extends Component {
         this.props.user.bdate.year,
         this.props.user.bdate.month - 1,
         0
-      ).getDate()
+      ).getDate();
 
       this.props.onUpdateDaysInMonth(days);
     }
@@ -97,7 +97,7 @@ class UserForm extends Component {
       this.props.onUpdateBdate({
         dateType: 'month',
         value: selectedOption
-      })
+      });
       this.updateDaysInMonth();
     }
   }

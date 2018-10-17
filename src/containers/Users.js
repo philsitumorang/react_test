@@ -30,7 +30,7 @@ class Users extends Component {
   }
 
   togglePopup(payload) {
-    payload.popup = true
+    payload.popup = true;
     this.props.onTogglePopup(payload);
   }
 

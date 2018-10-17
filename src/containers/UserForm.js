@@ -66,22 +66,22 @@ class UserForm extends Component {
       this.props.user.bdate.month.value === '' ||
       this.props.user.bdate.year.value === ''
     ) {
-      this.props.onUpdateNotify('Пожалуйста, укажите дату рождения.')
+      this.props.onUpdateNotify('Пожалуйста, укажите дату рождения.');
       return false;
     }
     if (this.props.user.address === '') {
-      this.props.onUpdateNotify('Пожалуйста, укажите ваш адрес.')
+      this.props.onUpdateNotify('Пожалуйста, укажите ваш адрес.');
       return false;
     }
     if (this.props.user.city === '') {
-      this.props.onUpdateNotify('Пожалуйста, укажите ваш город.')
+      this.props.onUpdateNotify('Пожалуйста, укажите ваш город.');
       return false;
     }
     if (
       this.props.user.phone === '' ||
       this.props.user.phone.match(/[\d]/gi).length < 11
     ) {
-      this.props.onUpdateNotify('Пожалуйста, укажите ваш номер телефона.')
+      this.props.onUpdateNotify('Пожалуйста, укажите ваш номер телефона.');
       return false;
     }
 
@@ -101,7 +101,7 @@ class UserForm extends Component {
       let payload = {
         users: this.props.users,
         user: this.props.user
-      }
+      };
       this.props.onUpdateUser(payload);
       this.props.onTogglePopup({ popup: false, user: {...UserForm}});
       this.props.onGetUsers();

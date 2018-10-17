@@ -24,7 +24,7 @@ class Users extends Component {
   }
 
   componentDidUpdate() {
-    clearTimeout(this.timer)
+    clearTimeout(this.timer);
     this.timer = setTimeout(() => {
       this.closeNotify()
     }, 3000)

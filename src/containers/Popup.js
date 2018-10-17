@@ -28,7 +28,7 @@ class Users extends Component {
     let payload = {
       popup: false,
       user : {...userForm}
-    }
+    };
     this.props.onTogglePopup(payload);
   }
 
@@ -37,7 +37,7 @@ class Users extends Component {
       <div className="popup">
         {this.props.popup ?
         <div>
-          <div className="overlay" onClick={this.togglePopup}></div>
+          <div className="overlay" onClick={this.togglePopup} />
           <div className="popup-wrapper">
             <div className="popup-block">
               <UserForm
