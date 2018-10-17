@@ -1,0 +1,20 @@
+.users {
+  position: relative;
+  .user {
+    position: relative;
+    background: #f4f4f4;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 20px 0;
+    .user-field {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .controls {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      font-size: 14px;
+    }
+  }
+}

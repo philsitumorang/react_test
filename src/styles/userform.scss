@@ -1,0 +1,15 @@
+.user-form {
+  h1 {
+    font-weight: 100;
+  }
+  .select-birthday-block {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    .select-birthday {
+      position: relative;
+      width: 33%;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+export const UPDATE_BDATE = 'UPDATE_BDATE';
+export const UPDATE_DAYS_IN_MONTH = 'UPDATE_DAYS_IN_MONTH';
+export const UPDATE_USER_FORM = 'UPDATE_USER_FORM';
+export const ADD_USER = 'ADD_USER';
+export const CLEAR_USER = 'CLEAR_USER';
+export const GET_USERS = 'GET_USERS';
+export const DELETE_USER = 'DELETE_USER';
+export const UPDATE_USER = 'UPDATE_USER';
+export const TOGGLE_POPUP = 'TOGGLE_POPUP';
+export const UPDATE_NOTIFY = 'UPDATE_NOTIFY';
